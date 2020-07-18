@@ -40,6 +40,9 @@
 /*============================================================================================*/
 /*Google web font family*/
 /*-------- Preloader --------*/
+:root {
+  --mainColor: #139893;
+}
 #preloader {
   position: fixed;
   top: 0;
@@ -1091,11 +1094,7 @@ footer ul li a i {
   color: #fff;
 }
 footer ul.links li a:hover {
-  -webkit-transform: translate(5px, 0);
-  -moz-transform: translate(5px, 0);
-  -ms-transform: translate(5px, 0);
-  -o-transform: translate(5px, 0);
-  transform: translate(5px, 0);
+ padding-right: 20px;
 }
 footer ul.links li a:hover:after {
   opacity: 1;
@@ -1103,10 +1102,12 @@ footer ul.links li a:hover:after {
 }
 footer ul.links li a:after {
   font-family: 'ElegantIcons';
-  content: "\24";
+  content: "\23";
   position: absolute;
   margin-left: 5px;
   top: 1px;
+  right: 0;
+  padding-left: 60px;
   opacity: 0;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
