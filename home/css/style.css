@@ -5488,3 +5488,14 @@ ul.bullets li:before {
   min-height: 250px;
   max-height: 250px;
 }
+.go-top {
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+  padding: 5px 15px;
+  background: #1d9b86;
+  border-radius: 50%;
+}
+.go-top:hover,.go-top:visited,.go-top:active{
+  color: #fff;
+}
