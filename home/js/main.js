@@ -184,6 +184,8 @@
 	
 	$('#reccomended').owlCarousel({
 		center: true,
+		autoplay : true,
+		autoplaySpeed : 300,
 		items: 2,
 		loop: true,
 		margin: 0,
