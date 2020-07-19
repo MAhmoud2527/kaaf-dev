@@ -253,6 +253,7 @@ ul, ol {
   .main_title_2 {
     margin-bottom: 10px;
   }
+
 }
 .main_title_2 h2 {
   margin: 25px 0 10px 0;
@@ -632,6 +633,7 @@ ul#top_menu li a:hover {
   ul#top_menu li a.login:before {
     /* content: "\7e"; */
   }
+  
 }
 @media (max-width: 767px) {
   ul#top_menu li a.search-overlay-menu-btn:before {
@@ -5498,4 +5500,20 @@ ul.bullets li:before {
 }
 .go-top:hover,.go-top:visited,.go-top:active{
   color: #fff;
+}
+.carousel-indicators{
+  right: 24%;
+}
+.w-100{
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
+}
+@media (max-width: 767px) {
+  .w-100{
+    min-height: 400px;
+    max-height: 400px;
+  }
+}
+.carousel-indicators .active{
+  background-color: #ffc107;
 }
