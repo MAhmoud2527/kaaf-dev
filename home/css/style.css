@@ -460,17 +460,16 @@ a.btn_explore:hover {
   top: 20px;
   right: 25px;
   color: #fff;
-  opacity: 0.6;
+  opacity: 1;
   width: 30px;
   height: 30px;
 }
 .closebt:hover {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  opacity: 1;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .btn_home_align {
@@ -5329,6 +5328,7 @@ ul.bullets li:before {
   visibility: hidden;
   z-index: 999999;
   text-align: center;
+  background: linear-gradient(to right, #4da648, #139893);
 }
 .search-overlay-menu.open {
   opacity: 1;
@@ -5365,6 +5365,9 @@ ul.bullets li:before {
   -ms-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+.search-overlay-menu form input::placeholder  {
+  color: #fff;
+}
 .search-overlay-menu form button {
   background: transparent;
   border: medium none;
@@ -5397,15 +5400,15 @@ ul.bullets li:before {
   width: 100%;
   color: #fff;
   background: transparent;
-  border-top: 0px solid transparent;
-  border-bottom: 2px solid #909090 !important;
+  border-top: 0px solid #fff;
+  border-bottom: 2px solid #fdf9f9 !important;
   border-left: 0px solid transparent;
   border-right: 0px solid transparent;
   font-size: 42px;
   font-size: 2.625rem;
   font-weight: 300;
   outline: none;
-  padding: 10px 46px 10px 0;
+  padding: 10px 46px 10px 0
 }
 @media (max-width: 767px) {
   .search-overlay-menu input[type="search"] {
@@ -5566,4 +5569,8 @@ position: absolute;
 .teacher-social li>a{
   font-size: 22px;
     color: aliceblue;
+}
+.icon_search:before {
+  content: "\55";
+  color: #fff;
 }
