@@ -164,6 +164,7 @@
 		center: true,
 		autoplay : true,
 		autoplaySpeed : 300,
+		autoplayHoverPause : true,
 		items: 2,
 		loop: true,
 		rtl:true,

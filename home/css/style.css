@@ -5487,8 +5487,8 @@ ul.bullets li:before {
   }
 }
 #carousel .owl-item img{
-  min-height: 250px;
-  max-height: 250px;
+  min-height: 300px;
+  max-height: 300px;
 }
 .go-top {
 	text-decoration: none;
@@ -5516,4 +5516,54 @@ ul.bullets li:before {
 }
 .carousel-indicators .active{
   background-color: #ffc107;
+}
+
+.overlay-slide {
+	position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+
+.overlay-slide:hover div {
+  transform: translate(0, 0);
+  transition: all 0.3s ease-in;
+  height: 100%;
+  bottom: 0;
+
+}
+.overlay-slide div {
+position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  transform: translate(0, 70%);
+  padding: 15px;
+  background-color: rgb(30 155 134 / 88%);
+  text-align:center;
+  transition: all 0.3s ease-in;
+  width: 100%;
+}
+.overlay-slide h2 {
+  margin: 9px 0;
+  font-size: 18px;
+  color: #eeeeee;
+}
+.overlay-slide p {
+  font-size: 14px;
+  color: #dddddd;
+  margin:0px 0px 20px 0;
+}
+.teacher-social{
+  display: -webkit-inline-box;
+}
+.teacher-social li{
+  display: inline-block!important;
+  margin: 0 10px;
+}
+.teacher-social li>a{
+  font-size: 22px;
+    color: aliceblue;
 }
