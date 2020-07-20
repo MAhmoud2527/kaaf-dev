@@ -3300,7 +3300,7 @@ section#reviews {
 
 /*-------- 2.5 Login/register/admission--------*/
 #login_bg, #register_bg, #admission_bg {
-  background: url(http://via.placeholder.com/1600x1067/ccc/fff/bg_login.jpg) center center no-repeat fixed;
+  background: url(../img/login.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3327,12 +3327,17 @@ section#reviews {
 
 #login figure, #register figure {
   text-align: center;
-  margin-bottom: 30px;
-  background: #480048;
-  background: -webkit-linear-gradient(left, #480048, #c04848);
-  background: linear-gradient(to right, #480048, #c04848);
-  margin: -45px -60px 30px -60px;
+  /* margin-bottom: 30px; */
+  /* background: #480048;
+  background: -webkit-linear-gradient(left, #4da648, #139893);
+  background: linear-gradient(to right, #4da648, #139893); */
+  /* margin: -45px -60px 30px -60px; */
   padding: 20px 60px 25px 60px;
+}
+.welcom_p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
 }
 @media (max-width: 767px) {
   #login figure, #register figure {
@@ -4996,6 +5001,7 @@ ul.bullets li:before {
   padding: 1.6em 0;
   width: 100%;
   position: absolute;
+  text-align: right;
 }
 
 .input--filled .input_label::after {
