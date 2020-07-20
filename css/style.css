@@ -317,7 +317,8 @@ input[type=text] {
   }
   #logo img{
     height: 52px;
-    width: 71%;
+    width: 50%;
+    text-align: center;
   }
 
   .wrapper {
@@ -329,7 +330,12 @@ input[type=text] {
   }
 
 }
-
+@media (min-width: 767px) {
+    #logo img {
+        width: 43%;
+    
+      }
+}
 /*--- Left Side Footer ---*/
 
 .alrt_dot {
@@ -2572,7 +2578,7 @@ i.icon2 {
 ._215b04 {
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'cairo' ;
     color: #f7f7f7;
     text-align: right;
     line-height: 26px;
@@ -8027,7 +8033,9 @@ a.rmv-btn i {
 }
 .create_btn_dash , .card_dash_left1 h1 , .crsedt145, .crse-perf-left, .crse-perf-right, .cr1fot50, .crsedt8145
 , .subcribe_title , .my_courses_tabs .nav-pills .nav-link , .ucp-table tbody tr td , .card-body p , .card-body h2,
-.analysis_card .card-header h2 ,
+.analysis_card .card-header h2 , 
+._5f7g15 span , 
+ 
  .text-uppercase, #add-course-tab .step-steps > li > a > .step-name , .ui.form.swdh339 textarea, .view_img_right p,
  .badge_min , .part_btn_save ,.save_content_btn, #add-course-tab .step-footer.step-tab-pager button{
     font-family: inherit!important;

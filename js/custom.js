@@ -200,7 +200,28 @@ if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://p
 }
 
 /*Floating Code for Iframe End*/
+$(".toggle-quiz").hide();
+$("#toggle-lesson").click(function(){
+    $(".toggle-quiz").hide().attr("formnovalidate");
+    $(".toggle-lesson").show();
+});
 
+$("#toggle-quiz").click(function(){
+    $(".toggle-lesson").hide().attr("formnovalidate");
+    $(".toggle-quiz").show();
+});
+
+//  small Quiz
+$(".add-quiz").hide();
+$("#add_file").click(function(){
+    $(".add-quiz").hide();
+    $(".add-file").show();
+});
+
+$("#add_small_quiz").click(function(){
+    $(".add-file").hide().attr("formnovalidate");
+    $(".add-quiz").show();
+});
 // expand/collapse all Start
 
 var headers = $('#accordion .accordion-header');
@@ -227,7 +248,7 @@ expandLink.click(function(){
     console.log({isAllOpen: isAllOpen, contentAreas: contentAreas})
     contentAreas[isAllOpen? 'slideDown': 'slideUp']();
     
-    expandLink.text(isAllOpen? 'Collapse All': 'Expand all')
+    expandLink.text(isAllOpen? 'غلق الكل': 'فتح الكل')
                 .data('isAllOpen', isAllOpen);    
 });
 

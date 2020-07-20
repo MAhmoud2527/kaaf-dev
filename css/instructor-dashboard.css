@@ -4163,3 +4163,14 @@ i.icon8 {
     right: 13px;
     position: absolute;
 }
+.part_btn_toggle {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'cairo', sans-serif;
+    color: #fff;
+    background: #139893;
+    padding: 0px 30px;
+    /* border-radius: 25px; */
+    border: 0;
+    height: 40px;
+  }

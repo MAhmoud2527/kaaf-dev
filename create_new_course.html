@@ -337,7 +337,7 @@
 																</div>
 															</div>
 														</div>
-														<div class="col-lg-4 col-md-12">
+														<div class="col-lg-6 col-md-12">
 															<div class="mt-30 lbel25">
 																<label>اللغة*</label>
 															</div>
@@ -347,29 +347,45 @@
 																<option value="2">انجليزى</option>
 															</select>
 														</div>
-														<div class="col-lg-4 col-md-6">
+														<div class="col-lg-6 col-md-6">
 															<div class="mt-30 lbel25">
-																<label>تصنيف لكورس *</label>
+																<label> تصنيفات رئيسة *</label>
 															</div>
 															<select class="ui hj145 dropdown cntry152 prompt srch_explore">
 																<option value="">اختار التصنيف</option>
-																<option value="1">علوم رياضة</option>
-																<option value="2">حاسب الى</option>
-																<option value="3">فيزياء</option>
-																<option value="4">كيمياء</option>
-																<option value="5">موسيقى</option>
+																<option value="1"> الجامعات</option>
+																<option value="2"> المتوسط</option>
+																<option value="3">الثانوي</option>
+																<option value="4">الاعدادى</option>
+																<option value="5">الابتدائى</option>
 															</select>
 														</div>
-														<div class="col-lg-4 col-md-6">
+														<div class="col-lg-6 col-md-6">
 															<div class="mt-30 lbel25">
-																<label>تصنيف فرعى*</label>
+																<label> تصنيفات رئيسية*</label>
+															</div>
+															<select class="ui hj145 dropdown cntry152 prompt srch_explore">
+																<option value="">اختار التصنيف الرئيسي</option>
+																<option value="1">جامعة الملك سعود </option>
+																<option value="2">جامعة الامام </option>
+																<option value="3">القدرات العامة </option>
+																<option value="4">التحصيلى </option>
+																<option value="4">الصف الاول </option>
+																<option value="4">الصف الثانى </option>
+															</select>
+														</div>	
+														<div class="col-lg-6 col-md-6">
+															<div class="mt-30 lbel25">
+																<label> تصنيفات فرعية*</label>
 															</div>
 															<select class="ui hj145 dropdown cntry152 prompt srch_explore">
 																<option value="">اختار التصنيف الفرعى</option>
-																<option value="1">اول ثانوى</option>
-																<option value="2">ثانى ثانوى</option>
-																<option value="3">تانيه اعدادى</option>
-																<option value="4">خامسة ابتدائي</option>
+																<option value="1">  فيزياء </option>
+																<option value="2">  حاسب</option>
+																<option value="3"> رياضيات </option>
+																<option value="4">كيمياء تحصيلى </option>
+																<option value="4">فيزياء عامة  </option>
+																<option value="4">احياء عامة  </option>
 															</select>
 														</div>													
 													</div>
@@ -381,25 +397,22 @@
 																<h4><i class="uil uil-dollar-sign-alt"></i>السعر</h4>
 															</div>
 														</div>
-														<div class="col-lg-2 col-md-3 col-sm-6">
+														<div class="col-lg-6 col-md-6 col-sm-6">
 															<div class="mt-30 lbel25">
 																<label>العملة*</label>
 															</div>
 															<select class="ui hj145 dropdown cntry152 prompt srch_explore">
-																<option value="">ريال سعودى</option>
+																<option value="0">ريال سعودى</option>
 																<option value="1">جنية مصرى</option>
 															</select>
 														</div>
-														<div class="col-lg-3 col-md-4 col-sm-6">
-															<div class="mt-30 lbel25">
-																<label>اختار*</label>
-															</div>
-															<select class="ui hj145 dropdown cntry152 prompt srch_explore">
-																<option value="">اختار</option>
-																<option value="0">مجانى</option>
-																<option value="1">12 ريال</option>
-																<option value="2">150 ريال</option>
-															</select>
+														<div class="col-lg-6 col-md-6">															
+															<div class="ui search focus mt-30 lbel25">
+																<label>ادخل السعر *</label>
+																<div class="ui left icon input swdh19">
+																	<input class="prompt srch_explore" type="number" placeholder="اكتب السعر المناسب" name="title" data-purpose="edit-course-title" maxlength="60" id="main[title]" value="">			
+																</div>
+															</div>									
 														</div>
 													</div>
 												</div>
@@ -498,84 +511,103 @@
 														</div>
 														<div class="view_info10">
 															<div class="row">
-																<div class="col-lg-12 col-md-12">															
-																	<div class="ui search focus mt-30 lbel25">
-																		<label>اسم محتوى الكورس*</label>
-																		<div class="ui left icon input swdh19">
-																			<input class="prompt srch_explore" type="text" placeholder="ضع عنوان المحتوى" name="title" data-purpose="edit-course-title" maxlength="60" id="Content[title]" value="">															
-																		</div>
-																	</div>									
+																<div class="col-lg-12 col-md-6">
+																	<button class="part_btn_toggle prt-sv" type="submit" id="toggle-lesson">
+																		أضافة درس</button>
+																	<button class="part_btn_toggle prt-sv" type="submit" id="toggle-quiz"> اضافة اختبار نهائي</button>
 																</div>
-																<div class="col-lg-12 col-md-12">	
-																	<div class="lecture_title">
-																		<h4>اضافة دروس</h4>
+																<!-- start Add lesson -->
+																<div class="col-lg-12 col-md-6 toggle-lesson">
+																	<div class="col-lg-12 col-md-12">	
+																		<div class="lecture_title">
+																			<h4>اضافة دروس</h4>
+																		</div>
 																	</div>
-																</div>
-																<div class="col-lg-6 col-md-12">															
-																	<div class="ui search focus mt-30 lbel25">
-																		<label>عنوان الدرس*</label>
-																		<div class="ui left icon input swdh19">
-																			<input class="prompt srch_explore" type="text" placeholder="اضف عنوان للدرس" name="title" data-purpose="edit-course-title" maxlength="60" id="lecture[title]" value="">															
-																		</div>
-																	</div>									
-																</div>
-																<div class="col-lg-6 col-md-6">
-																	<div class="part_input mt-30 lbel25">
-																		<label>رفع ملف*</label>
-																		<div class="input-group">
-																			<div class="custom-file">
-																				<input type="file" class="custom-file-input" id="inputGroupFile06">
-																				<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																	<div class="col-lg-12 col-md-12">
+																		<div class="ui search focus mt-30 lbel25">
+																			<label>اسم  الدرس*</label>
+																			<div class="ui left icon input swdh19">
+																				<input class="prompt srch_explore" type="text" placeholder="ضع عنوان الدرس هنا ..." name="title" data-purpose="edit-course-title" maxlength="60" id="Content[title]" value="">
+																			</div>
+																		</div>									
+																	</div>
+																	<div class="col-lg-6">
+																		<button class="part_btn_toggle prt-sv" type="submit" id="add_file">
+																			 رفع فيديو | ملف</button>
+																			 <button class="part_btn_toggle prt-sv" type="submit" id="add_small_quiz">
+																				اختبار صغير</button>
+																	</div>
+																	<div class="col-lg-12 col-md-6 add-file">
+																		<input type="radio" id="male" name="gender" value="male">
+																		<label for="male">Male</label><br>
+																		<input type="radio" id="female" name="gender" value="female">
+																		<label for="female">Female</label><br>
+																		<input type="radio" id="other" name="gender" value="other">
+																		<label for="other">Other</label>
+																		<div class="part_input mt-30 lbel25">
+																			<label>رفع فيديو | ملف*</label>
+																			<div class="input-group">
+																				<div class="custom-file">
+																					<input type="file" class="custom-file-input" id="inputGroupFile06">
+																					<label class="custom-file-label" for="inputGroupFile06"></label>
+																				</div>
 																			</div>
 																		</div>
 																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">	
-																	<div class="course_des_textarea mt-30 lbel25">
-																		<label>الوصف*</label>
-																		<div class="course_des_bg">
-																			<ul class="course_des_ttle">
-																				<li><a href="#"><i class="uil uil-bold"></i></a></li>
-																				<li><a href="#"><i class="uil uil-italic"></i></a></li>
-																				<li><a href="#"><i class="uil uil-list-ul"></i></a></li>
-																				<li><a href="#"><i class="uil uil-left-to-right-text-direction"></i></a></li>
-																				<li><a href="#"><i class="uil uil-right-to-left-text-direction"></i></a></li>
-																				<li><a href="#"><i class="uil uil-list-ui-alt"></i></a></li>
-																				<li><a href="#"><i class="uil uil-link"></i></a></li>
-																				<li><a href="#"><i class="uil uil-text-size"></i></a></li>
-																				<li><a href="#"><i class="uil uil-text"></i></a></li>
-																			</ul>
-																			<div class="textarea_dt">															
-																				<div class="ui form swdh339">
-																					<div class="field">
-																						<textarea rows="5" name="description" id="id_part_description" placeholder="ضع وصف للمحتوى هنا"></textarea>
-																					</div>
-																				</div>										
+																	<div class="col-lg-12 col-md-6 add-quiz">
+																		<div class="col-lg-12 col-md-12">	
+																			<div class="lecture_title">
+																				<h4>اضافة اختبار </h4>
 																			</div>
 																		</div>
+																		<p style="margin: 20px 60px; text-align: center; font-size: 30px;font-weight: 900;"> 
+																			تحت الانشاء 
+																		</p>
+																	</div>
+																	
+																	<!-- <div class="col-lg-12 col-md-12">	
+																		<div class="course_des_textarea mt-30 lbel25">
+																			<label>الوصف*</label>
+																			<div class="course_des_bg">
+																				<ul class="course_des_ttle">
+																					<li><a href="#"><i class="uil uil-bold"></i></a></li>
+																					<li><a href="#"><i class="uil uil-italic"></i></a></li>
+																					<li><a href="#"><i class="uil uil-list-ul"></i></a></li>
+																					<li><a href="#"><i class="uil uil-left-to-right-text-direction"></i></a></li>
+																					<li><a href="#"><i class="uil uil-right-to-left-text-direction"></i></a></li>
+																					<li><a href="#"><i class="uil uil-list-ui-alt"></i></a></li>
+																					<li><a href="#"><i class="uil uil-link"></i></a></li>
+																					<li><a href="#"><i class="uil uil-text-size"></i></a></li>
+																					<li><a href="#"><i class="uil uil-text"></i></a></li>
+																				</ul>
+																				<div class="textarea_dt">															
+																					<div class="ui form swdh339">
+																						<div class="field">
+																							<textarea rows="5" name="description" id="id_part_description" placeholder="ضع وصف للمحتوى هنا"></textarea>
+																						</div>
+																					</div>										
+																				</div>
+																			</div>
+																		</div>
+																	</div> -->
+																	<div class="col-lg-2 col-md-12">
+																		<button class="part_btn_save prt-sv" type="submit">حفظ الدرس</button>
 																	</div>
 																</div>
-																<div class="col-lg-5 col-md-6">															
-																	<div class="ui search focus mt-30 lbel25">
-																		<label>Volume*</label>
-																		<div class="ui left icon input swdh19 swdh95">
-																			<input class="prompt srch_explore" type="number" min="0" name="size" required="" placeholder="0">															
-																			<div class="badge_mb">MB</div>
+																<!-- End Add Lesson -->
+
+																<!-- Start Add quiz -->
+																<div class="col-lg-12 col-md-6 toggle-quiz">
+																	<div class="col-lg-12 col-md-12">	
+																		<div class="lecture_title">
+																			<h4>اضافة اختبار نهائي</h4>
 																		</div>
-																	</div>									
+																	</div>
+																	<p style="margin: 20px 60px; text-align: center; font-size: 30px;font-weight: 900;"> 
+																		تحت الانشاء 
+																	</p>
 																</div>
-																<div class="col-lg-5 col-md-6">															
-																	<div class="ui search focus mt-30 lbel25">
-																		<label>الوقت*</label>
-																		<div class="ui left icon input swdh19 swdh55">
-																			<input class="prompt srch_explore" type="number" min="0" name="duration" required="" placeholder="0">															
-																			<div class="badge_min">دقيقة</div>
-																		</div>
-																	</div>									
-																</div>
-																<div class="col-lg-2 col-md-12">
-																	<button class="part_btn_save prt-sv" type="submit">حفظ الدرس</button>
-																</div>
+																<!-- End Add quiz -->
 																<div class="col-lg-12 col-md-12">
 																	<div class="table-responsive mt-50 mb-0">
 																		<table class="table ucp-table">
