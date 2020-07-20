@@ -5602,3 +5602,6 @@ position: absolute;
   border: 0;
   height: 40px;
 }
+.add-file #male , .-file #female{
+  margin: 6px 8px;
+}
