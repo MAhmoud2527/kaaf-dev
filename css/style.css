@@ -8043,3 +8043,6 @@ a.rmv-btn i {
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     display: flex;
 }
+.add_stream_content h4{
+    text-align: right;
+}
