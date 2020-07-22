@@ -5587,10 +5587,10 @@ position: absolute;
   content: "\55";
   color: #fff;
 }
-.active{
+/* .active{
   color: #fff;
   background: #333;
-}
+} */
 .part_btn_toggle {
   font-size: 14px;
   font-weight: 500;
