@@ -542,10 +542,12 @@ header.header.sticky {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #480048;
-  background: -webkit-linear-gradient(left, #4da648, #139893);
-  background: linear-gradient(to right, #4da648, #139893);;
+  background: #fffcfc;
+  /* background: -webkit-linear-gradient(left, #4da648, #139893);
+  background: linear-gradient(to right, #4da648, #139893);; */
   padding: 15px 20px;
+  border-bottom: solid 3px #369087;
+  border-radius: 0 0 20% 20%;
 }
 @media (max-width: 767px) {
   header.header.sticky {
@@ -787,12 +789,15 @@ ul#top_menu li a.btn_1:hover {
   animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
+  margin-top: -40px;
+  height: 105px;
 }
 
 ul#top_menu {
   animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
+  margin-top: 10px;
 }
 
 #hero_in h1 {
