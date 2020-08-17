@@ -8046,3 +8046,93 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 .add_stream_content h4{
     text-align: right;
 }
+
+
+/* Radio button style */
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-check input:checked ~ .checkmark {
+    background-color: #139893;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-check .checkmark:after {
+       top: 9px;
+      right: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+ .view_info10 .part_btn_toggle{
+    min-width: 209px;
+    min-height: 60px;
+    font-weight: 600;
+  }
+  /* Tree Style */
+  .sim-tree .sim-tree-checkbox{
+    margin: 0 10px;
+  }
+  .sim-tree .sim-tree-checkbox.sim-tree-semi, .sim-tree .sim-tree-checkbox.checked{
+    border-color: #139893;
+    background-color: #139893;
+  }
+  .sim-tree .sim-icon-r:before{
+    border-right-width: 8px;
+    border-right-color: #139893;
+    border-left-width:unset;
+    border-left-color:transparent;
+    top: 7px;
+  }
+  .sim-tree .sim-icon-d:before{
+    border-top-color: #139893;
+
+  }

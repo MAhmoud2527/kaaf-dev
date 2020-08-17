@@ -252,7 +252,111 @@ expandLink.click(function(){
                 .data('isAllOpen', isAllOpen);    
 });
 
+$("#watch-me").click(function()
+  {
+    $("#show-me:hidden").show('slow');
+   $("#show-me-two").hide();
+   $("#show-me-three").hide();
+   });
+   $("#watch-me").click(function()
+  {
+    if($('watch-me').prop('checked')===false)
+   {
+    $('#show-me').hide();
+   }
+  });
+  
+  
+  
+  
+  
+  
+  $("#see-me").click(function()
+  {
+    $("#show-me-two:hidden").show('slow');
+   $("#show-me").hide();
+   $("#show-me-three").hide();
+   });
+   $("#see-me").click(function()
+  {
+    if($('see-me-two').prop('checked')===false)
+   {
+    $('#show-me-two').hide();
+   }
+  });
+  
+  
+// Radio Button 
+  
+  
+  $("#look-me").click(function()
+  {
+    $("#show-me-three:hidden").show('slow');
+   $("#show-me").hide();
+   $("#show-me-two").hide();
+   });
+   $("#look-me").click(function()
+  {
+    if($('see-me-three').prop('checked')===false)
+   {
+    $('#show-me-three').hide();
+   }
+  });
 
+
+// tree
+var list = [{
+    "id": '1',
+    "pid": '',
+    "name": "فيزياء الكم",
+},
+{
+    "id": '11',
+    "pid": '1', // parent ID
+    "name": "الدرس الاول شرح مقدمة الكم"
+},
+{
+    "id": '12',
+    "pid": '1',
+    "name": "الدرس الثانى شرح الفصل الاول"
+},{
+    "id": '13',
+    "pid": '1',
+    "name": "الدرس الثالث شرح الفصل الثانى"
+},{
+    "id": '14',
+    "pid": '1',
+    "name": "الدرس الرابع شرح الفصل الثالث"
+},
+{
+    "id": '2',
+    "pid": '',
+    "name": "رياضيات الصف الثالث الثانوى"
+},
+{
+    "id": '22',
+    "pid": '2',
+    "name": "حل معادلات الاحصاء"
+},
+{
+    "id": '23',
+    "pid": '2',
+    "name": "شرح نسبة وتناسب مراجعه نهائية"
+}];
+        var tree = simTree({
+            el: '#tree',
+            data: list,
+            check: true,
+            linkParent: true,
+            //check: true,
+            onClick: function (item) {
+                console.log(item)
+            },
+            onChange: function (item) {
+                console.log(item)
+            }
+		});
+		
 // Payment Method Accordion
 $('input[name="paymentmethod"]').on('click', function () {
 	var $value = $(this).attr('value');
