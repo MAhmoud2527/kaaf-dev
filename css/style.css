@@ -4212,8 +4212,13 @@ a.rmv-btn i {
 	font-family: 'Cairo', sans-serif;
 	text-align: right;
 }
-
-.save_btn {
+.btn-primary5{
+    text-align: center;
+    padding: 10px 21px!important;
+    color: #fff!important;
+    transition: all .3s;
+}
+.save_btn,.btn-primary5 {
     height: 40px;
     padding: 0 20px;
     border: 0;
@@ -4224,9 +4229,10 @@ a.rmv-btn i {
     font-family: 'Cairo', sans-serif;
     font-weight: 500;
     background: #139893;
+    cursor: pointer;
 }
 
-.save_btn:hover {
+.save_btn:hover, .btn-primary5:hover {
     color: #fff !important;
     background: #333;
 }
