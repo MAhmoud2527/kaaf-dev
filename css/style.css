@@ -8051,9 +8051,10 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 /* Radio button style */
 
 .container-check {
-    display: block;
+    display: inline-block;
+    text-align: center;
     position: relative;
-    padding-right: 35px;
+    padding: 0  35px;
     margin-bottom: 22px;
     cursor: pointer;
     font-size: 16px;
@@ -8118,6 +8119,16 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     font-weight: 600;
   }
   /* Tree Style */
+  #tree{
+    padding: 20px;
+    background: #f7f7f7;
+  }
+  .sim-tree .sim-icon-d:before, .sim-tree .sim-icon-r:before{
+    border: 10px solid transparent;
+  }
+  .sim-tree .sim-tree-spread, .sim-tree a{
+      height: 30px;
+  }
   .sim-tree .sim-tree-checkbox{
     margin: 0 10px;
   }
@@ -8126,7 +8137,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     background-color: #139893;
   }
   .sim-tree .sim-icon-r:before{
-    border-right-width: 8px;
+    border-right-width: 10px;
     border-right-color: #139893;
     border-left-width:unset;
     border-left-color:transparent;
