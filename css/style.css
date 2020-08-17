@@ -2493,7 +2493,7 @@ i.icon1 {
 }
 
 .srch_explore:focus {
-    border: 1px solid #333 !important;	
+    border: 1px solid #139893 !important;	
 	box-shadow: none !important;
 }
 
@@ -4143,11 +4143,12 @@ a.rmv-btn i {
     color: rgba(0,0,0,.87);
     border-radius: 1rem !important;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1) !important;
-	text-align: right;
+    text-align: right;
+    font-family: cairo;
 }
 
 .ui.form.swdh30 textarea:focus {
-    border: 1px solid #333 !important;
+    border: 1px solid #139893 !important;
     box-shadow: none;
 }
 
@@ -5705,10 +5706,10 @@ a.rmv-btn i {
 }
 
 .apply_form {
-	padding-top: 50px;
-    border-top: 1px solid #e5e5e5;
-    margin-top: 20px;
-    margin-bottom: 50px;
+	padding-top: 20px;
+    /* border-top: 1px solid #e5e5e5; */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .apply_form h4 {
