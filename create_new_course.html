@@ -25,7 +25,13 @@
 		<link href="css/night-mode.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/jquery-steps.css" rel="stylesheet">
-		
+		<!-- compiled and minified CSS -->
+		<link 
+		rel="stylesheet"
+		href="https://cdn.rtlcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-cSfiDrYfMj9eYCidq//oGXEkMc0vuTxHXizrMOFAaPsLt1zoCUVnSsURN+nef1lj"
+		crossorigin="anonymous">
+	
 		<!-- Vendor Stylesheets -->
 		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 		<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
@@ -531,7 +537,11 @@
 																			<div class="ui left icon input swdh19">
 																				<input class="prompt srch_explore" type="text" placeholder="ضع عنوان الدرس هنا ..." name="title" data-purpose="edit-course-title" maxlength="60" id="Content[title]" value="">
 																			</div>
-																		</div>									
+																		</div>
+																		<label class="container-check mt-3" style="color: #ff5858; font-weight:600;">اجعل الدرس مجاني
+																			<input  name="radio" type="checkbox" >
+																			<span class="checkmark"></span>
+																		  </label>									
 																	</div>
 																	<div class="col-lg-12 text-center">
 																		<button class="part_btn_toggle prt-sv" type="submit" id="add_file">
@@ -560,23 +570,81 @@
 																						<input id='see-me' name='radio' type='radio'  /> 
 																						<span class="checkmark"></span>
 																					  </label>
-																					 
+																					  <label class="container-check">البث مباشر
+																						<input id='look-me' name='radio' type='radio'  /> 
+																						<span class="checkmark"></span>
+																					  </label>
 																					 
 																				   </form>
-																				   <div id='show-me'>
+																				   <div class="" id='show-me'>
 																					<div class="part_input mt-10 lbel25">
 																						<label>رفع فيديو | ملف*</label>
 																						<div class="input-group">
 																							<div class="custom-file">
 																								<input type="file" class="custom-file-input" id="inputGroupFile06">
 																								<label class="custom-file-label" for="inputGroupFile06"></label>
+																								<br>
 																							</div>
 																						</div>
+																						<br>
+																						<div class="mb-4 ">
+																							<button class="part_btn_save" id="button">
+																								<i class="uil uil-plus-circle"></i>
+																								<span>اضافة صورة اخري</span>
+																								</button>
+																								
+																						</div>
+																						<table class="table table-sortable ucp-table"">
+																							<thead>
+																							<tr>
+																								<th>#</th>
+																								<th>الاسم</th>
+																								<th>الصورة</th>
+																								<th></th>
+																							</tr>
+																							</thead>
+																							<tbody>
+																							<tr class="row-item">
+																								<td><i class="uil uil-image-v"></i> </td>
+																								<td>الصورة الاولى</td>
+																								<td><img src="images/courses/img-1.jpg" alt="" width="90px"></td>
+																								<td class="text-center">
+																									<a href="#" title="تعديل" class="gray-s"><i class="uil uil-edit-alt"></i></a>
+																									<a href="#" title="جذف" class="gray-s"><i class="uil uil-trash-alt"></i></a>
+																								</td>
+																							</tr>
+																							<tr class="row-item">
+																								<td><i class="uil uil-image-v"></i> </td>
+																								<td>الصورة الثانية</td>
+																								<td><img src="images/courses/img-2.jpg" alt="" width="90px"></td>
+																								<td class="text-center">
+																									<a href="#" title="تعديل" class="gray-s"><i class="uil uil-edit-alt"></i></a>
+																									<a href="#" title="حذف" class="gray-s"><i class="uil uil-trash-alt"></i></a>
+																								</td>
+																							</tr>
+																							<tr class="row-item">
+																								<td><i class="uil uil-image-v"></i></td>
+																								<td>الصورة الثالثة</td>
+																								<td><img src="images/courses/img-3.jpg" alt="" width="90px"></td>
+																								<td class="text-center">
+																									<a href="#" title="تعديل" class="gray-s"><i class="uil uil-edit-alt"></i></a>
+																									<a href="#" title="حذف" class="gray-s"><i class="uil uil-trash-alt"></i></a>
+																								</td>
+																							</tr>
+																							</tbody>
+																						</table>
+
+																						
 																					</div>
 																				   </div>
 																				   
 																				   <div id='show-me-two' style='display:none;'>
-																					<div id="tree"></div>
+																					<div id="tree" style="overflow-y: scroll; min-height:'auto';max-height:250px;"></div>
+																				</div>
+																				<div id='show-me-three' style='display:none;'>
+																					<p style="margin: 20px 60px; text-align: center; font-size: 30px;font-weight: 900;"> 
+																						تحت الانشاء 
+																					</p>
 																				</div>
 																				   
 																			</div>
@@ -614,7 +682,7 @@
 																</div>
 																<!-- End Add quiz -->
 																<div class="col-lg-12 col-md-12">
-																	<div class="table-responsive mt-50 mb-0">
+																	<div class="table-responsive mt-50 mb-0 table-sortable">
 																		<table class="table ucp-table">
 																			<thead class="thead-s">
 																				<tr>
@@ -627,7 +695,7 @@
 																				</tr>
 																			</thead>
 																			<tbody>
-																				<tr>
+																				<tr class="row-item">
 																					<td class="text-center">1</td>
 																					<td class="cell-ta">مراجعه فيزياء ثانية ثانوي</td>
 																				
@@ -639,7 +707,7 @@
 																						<a href="#" title="Delete" class="gray-s"><i class="uil uil-trash-alt"></i></a>
 																					</td>
 																				</tr>
-																				<tr>
+																				<tr class="row-item">
 																					<td class="text-center">2</td>
 																					<td class="cell-ta">عضوية ثانية ثانوى</td>
 																					<td class="text-center">0</td>
@@ -987,6 +1055,7 @@
 	<script src="js/vertical-responsive-menu.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="vendor/bootstrap-rtl/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.sortable.js"></script>
 	<script src="vendor/OwlCarousel/owl.carousel.js"></script>
 	<script src="vendor/semantic/semantic.min.js"></script>
 	<script src="js/simTree.js"></script>
@@ -994,11 +1063,7 @@
 	<script src="js/night-mode.js"></script>
 	<script src="js/jquery-steps.min.js"></script>
 	<script>
-		$('#add-course-tab').steps({
-		  onFinish: function () {
-			alert('Wizard Completed');
-		  }
-		});		
+		$('#add-course-tab').steps({});		
 	</script>
 			
 </body>

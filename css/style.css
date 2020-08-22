@@ -7672,7 +7672,7 @@ a.rmv-btn i {
     font-weight: 600;
     color: #333;
     font-family: 'Cairo', sans-serif;
-    text-align: right;
+    text-align: center;
     padding-bottom: 15px;
     margin-top: 0;
 }
@@ -7682,7 +7682,7 @@ a.rmv-btn i {
     font-weight: 400;
     color: #686f7a;
     font-family: 'Cairo', sans-serif;
-    text-align: right;
+    text-align: center;
     margin-top: 0;
 }
 
@@ -8069,6 +8069,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    top: 15px;
   }
   
   /* Hide the browser's default radio button */
@@ -8158,6 +8159,35 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     margin-right: 24px;
   }
 
-
+  .custom-file-input{
+      /* margin-top: 10px!important; */
+  }
+  .custom-file-label{
+      top: 10px!important;
+  }
   /* Drag and Drop Table */
   
+.add-file label{
+    font-weight: normal!important;
+}
+.prt-sv{
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+#show-me .row-item{
+    cursor: move;
+}
+#show-me .glyphicon-trash{
+    color: #ff0000;
+    font-size: 22px;
+    cursor: pointer;
+}
+#show-me .uil-image-v{
+    font-size: 22px;
+}
+#show-me-two{
+    margin-top: 20px;
+}
+._14d25 .cmtk_dt .title_404 , ._14d25 .cmtk_dt .thnk_title1{
+    color: #852929;
+}
