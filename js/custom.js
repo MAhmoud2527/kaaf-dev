@@ -408,10 +408,19 @@ $('input[name="paymentmethod"]').on('click', function () {
 	$('[data-method="' + $value + '"]').slideDown();
 });
 
+// Auto increament number
+$("#button2").click(function () {
+    var clone = $(".add-quiz").find("#add-more-input").last().clone();
+	 $("#button2").before(clone);
+    });
+
+
 // Add new div
 $("#button").click(function () {
     var clone = $("#show-me").find(".custom-file").last().clone();
-     clone.attr("id","newId");
+    //  clone.attr("id","newId");
      $("#button").before(clone);
-    });
+	});
+	
+	
 

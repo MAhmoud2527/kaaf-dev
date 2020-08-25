@@ -7536,7 +7536,7 @@ a.rmv-btn i {
 
 .ques_title span {
     font-weight: 600;
-	margin-right: 10px;
+	/* margin-right: 10px; */
 }
 
 .ques_item label {
@@ -8053,6 +8053,9 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 .add_stream_content h4{
     text-align: right;
 }
+.part_btn_save{
+    margin-top: 15px;
+}
 
 
 /* Radio button style */
@@ -8163,7 +8166,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
       /* margin-top: 10px!important; */
   }
   .custom-file-label{
-      top: 10px!important;
+      /* top: 10px!important; */
   }
   /* Drag and Drop Table */
   
@@ -8174,7 +8177,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     margin-top: 18px;
     margin-bottom: 10px;
 }
-#show-me .row-item{
+#show-me .row-item , .ucp-table .row-item {
     cursor: move;
 }
 #show-me .glyphicon-trash{
@@ -8191,3 +8194,50 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 ._14d25 .cmtk_dt .title_404 , ._14d25 .cmtk_dt .thnk_title1{
     color: #852929;
 }
+.ui.checkbox .box:after, .ui.checkbox label:after{
+    right: 0!important;
+    left: unset!important;
+}
+.ui.radio.checkbox .box:before, .ui.radio.checkbox label:before{
+    right: 0!important;
+    left: unset!important;
+}
+.ui.radio.checkbox .box, .ui.radio.checkbox label {
+    padding-right: 1.85714em;
+}
+
+/* auto increse number in Quiz */
+.all_ques_lest{
+    counter-reset: rowNumber;
+}
+.ques_title{
+    display: inline-block;
+    direction: rtl;
+  }
+  
+  .ques_title b::before {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber) " ) ";
+    padding-left: 0.3em;
+    text-align: right;
+  }
+
+  /* #add-more-input{
+    counter-reset: rowNumber;
+}
+
+  
+  #add-more-input .lecture_title h4::after {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber) "  ";
+    padding-left: 0.3em;
+    text-align: right;
+  } */
+  .ui.checkbox input.hidden+label{
+      display: inline;
+  }
+
+
+  

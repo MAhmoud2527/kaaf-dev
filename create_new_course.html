@@ -581,8 +581,10 @@
 																						<label>رفع فيديو | ملف*</label>
 																						<div class="input-group">
 																							<div class="custom-file">
-																								<input type="file" class="custom-file-input" id="inputGroupFile06">
-																								<label class="custom-file-label" for="inputGroupFile06"></label>
+																								<input type="file" class="custom-file-input" id="inputGroupFile06" multiple="">
+																								<label class="custom-file-label" for="inputGroupFile06">
+																								اختار صورة من جهازك الشخصي
+																								</label>
 																								<br>
 																							</div>
 																						</div>
@@ -649,23 +651,198 @@
 																				   
 																			</div>
 																		   </div>
+																		   <div class="col-lg-12 col-md-12">
+																			<div class="table-responsive mt-50 mb-0 table-sortable">
+																				<table class="table ucp-table">
+																					<thead class="thead-s">
+																						<tr>
+																							<th class="text-center" scope="col">الدرس</th>
+																							<th class="cell-ta">الاسم</th>
+																							<th class="text-center" scope="col">الوقت</th>
+																							<th class="text-center" scope="col">الصفحات</th>
+																							<th class="text-center" scope="col">الملفات</th>
+																							<th class="text-center" scope="col"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr class="row-item">
+																							<td class="text-center">1</td>
+																							<td class="cell-ta">مراجعه فيزياء ثانية ثانوي</td>
+																						
+																							<td class="text-center">6</td>
+																							<td class="text-center">0</td>
+																							<td class="text-center"><a href="#">فيديو</a></td>
+																							<td class="text-center">
+																								<a href="#" title="Edit" class="gray-s"><i class="uil uil-edit-alt"></i></a>
+																								<a href="#" title="Delete" class="gray-s"><i class="uil uil-trash-alt"></i></a>
+																							</td>
+																						</tr>
+																						<tr class="row-item">
+																							<td class="text-center">2</td>
+																							<td class="cell-ta">عضوية ثانية ثانوى</td>
+																							<td class="text-center">0</td>
+																							<td class="text-center">3</td>
+																							<td class="text-center"><a href="#">ملف</a></td>
+																							<td class="text-center">
+																								<a href="#" title="تعديل" class="gray-s"><i class="uil uil-edit-alt"></i></a>
+																								<a href="#" title="حذف" class="gray-s"><i class="uil uil-trash-alt"></i></a>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
 																		
 																	</div>
 																	<div class="col-lg-12 col-md-6 add-quiz">
 																		<div class="col-lg-12 col-md-12">	
 																			<div class="lecture_title">
-																				<h4>اضافة اختبار </h4>
+																				<h4>اضافة الاسئلة </h4>
 																			</div>
 																		</div>
-																		<p style="margin: 20px 60px; text-align: center; font-size: 30px;font-weight: 900;"> 
-																			تحت الانشاء 
-																		</p>
+																		<div class="col-md-12">
+																			<div class="alert alert-info text-center" role="alert">
+																				ملحوظة : يمكنك اضافة السوال والاجابة على شكل نص او صورة
+																			  </div>
+																		</div>
+																		<div class="col-lg-6 col-md-6">															
+																			<div class="ui search focus mt-30 lbel25">
+																				<label>عدد الاسئلة  *</label>
+																				<div class="ui left icon input swdh19">
+																					<input class="prompt srch_explore" type="number" placeholder="رجاء كتابة عدد الاسئلة" name="title" data-purpose="edit-course-title" maxlength="60" id="main[title]" value="">			
+																				</div>
+																			</div>									
+																		</div>
+																		<div class="col-lg-6 col-md-6">															
+																			<div class="ui search focus mt-30 lbel25">
+																				<label>مدة الاختبار  *</label>
+																				<div class="ui left icon input swdh19">
+																					<input class="prompt srch_explore" type="number" placeholder="رجاء كتابة المدة الزمنية للاختبار" name="title" data-purpose="edit-course-title" maxlength="60" id="main[title]" value="">			
+																				</div>
+																			</div>									
+																		</div>
+																		
+
+																		<div class="col-lg-12">
+																			<div id="add-more-input" class="row">
+																				<div class="col-lg-12 col-md-12">	
+																					<div class="lecture_title">
+																						
+																						<h4>السؤال رقم <span>1</span>  </h4>
+
+																					</div>
+																				</div>
+																				<div class="col-lg-6 col-md-12">															
+																					<div class="ui search focus mt-30 lbel25">
+																						<label>اكتب السوال هنا*</label>
+																						<div class="ui left icon input swdh19">
+																							<input class="prompt srch_explore" type="text" placeholder="اضف السوال" name="title"  value="">															
+																						</div>
+																					</div>									
+																				</div>
+																				<div class="col-lg-6 col-md-12">
+																					<div class="part_input mt-30 lbel25">
+																						<label>او رفع صورة للسوال*</label>
+																						<div class="input-group">
+																							<div class="custom-file">
+																								<input type="file" class="custom-file-input" id="inputGroupFile06">
+																								<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-6 col-md-12">															
+																					<div class="ui search focus mt-30 lbel25">
+																						<label>الاجابة الاولى*</label>
+																						<div class="ui left icon input swdh19">
+																							<input class="prompt srch_explore" type="text" placeholder="اضف السوال" name="title"  value="">															
+																						</div>
+																					</div>									
+																				</div>
+																				<div class="col-lg-6 col-md-12">
+																					<div class="part_input mt-30 lbel25">
+																						<label>رفع صوره لاجابة السوال*</label>
+																						<div class="input-group">
+																							<div class="custom-file">
+																								<input type="file" class="custom-file-input" id="inputGroupFile06">
+																								<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-6 col-md-12">															
+																					<div class="ui search focus mt-30 lbel25">
+																						<label>الاجابة الثانية*</label>
+																						<div class="ui left icon input swdh19">
+																							<input class="prompt srch_explore" type="text" placeholder="اضف السوال" name="title"  value="">															
+																						</div>
+																					</div>									
+																				</div>
+																				<div class="col-lg-6 col-md-12">
+																					<div class="part_input mt-30 lbel25">
+																						<label>رفع صوره لاجابة السوال*</label>
+																						<div class="input-group">
+																							<div class="custom-file">
+																								<input type="file" class="custom-file-input" id="inputGroupFile06">
+																								<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-6 col-md-12">															
+																					<div class="ui search focus mt-30 lbel25">
+																						<label>الاجابة الثالثة*</label>
+																						<div class="ui left icon input swdh19">
+																							<input class="prompt srch_explore" type="text" placeholder="اضف السوال" name="title"  value="">															
+																						</div>
+																					</div>									
+																				</div>
+																				<div class="col-lg-6 col-md-12">
+																					<div class="part_input mt-30 lbel25">
+																						<label>رفع صوره لاجابة السوال*</label>
+																						<div class="input-group">
+																							<div class="custom-file">
+																								<input type="file" class="custom-file-input" id="inputGroupFile06">
+																								<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-6 col-md-12">															
+																					<div class="ui search focus mt-30 lbel25">
+																						<label>الاجابة الرابعة*</label>
+																						<div class="ui left icon input swdh19">
+																							<input class="prompt srch_explore" type="text" placeholder="اضف السوال" name="title"  value="">															
+																						</div>
+																					</div>									
+																				</div>
+																				<div class="col-lg-6 col-md-12">
+																					<div class="part_input mt-30 lbel25">
+																						<label>رفع صوره لاجابة السوال*</label>
+																						<div class="input-group">
+																							<div class="custom-file">
+																								<input type="file" class="custom-file-input" id="inputGroupFile06">
+																								<label class="custom-file-label" for="inputGroupFile06">لم يتم اختيار اى ملف</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		
+																		<div class="col-md-12">
+																			<button class="part_btn_save" id="button2">
+																				<i class="uil uil-plus-circle"></i>
+																				<span>اضافة سؤال اخر</span>
+																				</button>
+																		</div>
 																	</div>
 																	
 																	
 																	<div class="col-lg-2 col-md-12">
-																		<button class="part_btn_save prt-sv" type="submit">حفظ الدرس</button>
+																		<button class="part_btn_save prt-sv" type="submit">حفظ </button>
 																	</div>
+																	
 																</div>
 																<!-- End Add Lesson -->
 
@@ -681,52 +858,7 @@
 																	</p>
 																</div>
 																<!-- End Add quiz -->
-																<div class="col-lg-12 col-md-12">
-																	<div class="table-responsive mt-50 mb-0 table-sortable">
-																		<table class="table ucp-table">
-																			<thead class="thead-s">
-																				<tr>
-																					<th class="text-center" scope="col">الدرس</th>
-																					<th class="cell-ta">الاسم</th>
-																					<th class="text-center" scope="col">الوقت</th>
-																					<th class="text-center" scope="col">الصفحات</th>
-																					<th class="text-center" scope="col">الملفات</th>
-																					<th class="text-center" scope="col"></th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<tr class="row-item">
-																					<td class="text-center">1</td>
-																					<td class="cell-ta">مراجعه فيزياء ثانية ثانوي</td>
-																				
-																					<td class="text-center">6</td>
-																					<td class="text-center">0</td>
-																					<td class="text-center"><a href="#">فيديو</a></td>
-																					<td class="text-center">
-																						<a href="#" title="Edit" class="gray-s"><i class="uil uil-edit-alt"></i></a>
-																						<a href="#" title="Delete" class="gray-s"><i class="uil uil-trash-alt"></i></a>
-																					</td>
-																				</tr>
-																				<tr class="row-item">
-																					<td class="text-center">2</td>
-																					<td class="cell-ta">عضوية ثانية ثانوى</td>
-																					<td class="text-center">0</td>
-																					<td class="text-center">3</td>
-																					<td class="text-center"><a href="#">ملف</a></td>
-																					<td class="text-center">
-																						<a href="#" title="تعديل" class="gray-s"><i class="uil uil-edit-alt"></i></a>
-																						<a href="#" title="حذف" class="gray-s"><i class="uil uil-trash-alt"></i></a>
-																					</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="save_content">
-																		<button class="save_content_btn" type="Submit">حفظ محتويات الكورس</button>
-																	</div>
-																</div>
+															
 															</div>
 														</div>
 													</div>
