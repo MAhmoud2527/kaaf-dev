@@ -6276,6 +6276,8 @@ a.rmv-btn i {
     line-height: 26px;
     padding-bottom: 20px;
     text-align: right;
+    border-right: solid 2px #139893;
+    border-left: solid 2px #139893;
 }
 
 .panel-default-1 {
@@ -8239,5 +8241,163 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
       display: inline;
   }
 
+/* Filll Manger */
+  .pb-filemng-template {
+    margin-top: 40px;
+    /* font-family: 'Sansita', sans-serif; */
+}
 
-  
+
+.pb-filemng-navbar {
+    margin-bottom: 0;
+}
+
+.treeview-toggle-btn {
+    margin-left: 15px;
+}
+.pb-filemng-template-body{
+    /* border-left: solid 2px #139893; */
+    border-right: solid 2px #139893!important;
+
+}
+.sui-treeview-item-icon{
+    color: #139893!important;
+}
+.sui-treeview-item-active>.sui-treeview-item-content>.sui-treeview-item-text, .sui-treeview-item-active>.sui-treeview-item-content>.sui-treeview-item-text:hover, .sui-treeview-focus .sui-treeview-item-active>.sui-treeview-item-content>.sui-treeview-item-text, .sui-treeview-focus .sui-treeview-item-active>.sui-treeview-item-content>.sui-treeview-item-text:hover {
+    background-color: #515150!important;
+}
+.sui-treeview-list{
+    text-align: right;
+    padding-left: unset;
+}
+.sui-treeview-item-text:hover {
+    color: #fff;
+    background-color: #515150;
+}
+.sui-treeview-item-toggle-collapsed{
+    left: 6px;
+    top: -5px;
+}
+.pb-filemng-body-folders {
+	position: relative;
+	display: inline-block;
+}
+
+.pb-filemng-body-folders:hover .edit {
+	display: block;
+}
+.edit {
+    padding-top: 7px;
+    padding-right: 7px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.edit a {
+	color: #000;
+}
+.pb-filemng-template-btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    color: gray;
+    padding: 0px 13px 0px 13px;
+}
+
+.pb-filemng-active {
+    border-bottom: 2px solid #6d97db;
+    color: #5f6977;
+}
+
+.pb-filemng-template-btn:hover {
+    color: blue;
+}
+.pb-filemng-body-folders{
+    margin-bottom: 11px;
+    float: right;
+    display: inline-block;
+}
+.pb-filemng-body-folders > img:hover {
+    cursor: pointer;
+}
+
+.btn-align {
+    margin-top: 7px;
+}
+.upload_btn2{
+    background: unset;
+    color: #139893!important;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.upload_btn2:hover{
+    color: #139893!important;
+    background: #139893;
+    transition: all .5s;
+}
+.pb-filemng-template-treeview {
+    border-right: unset;
+}
+
+.pb-filemng-folder {
+    color: orange;
+    padding-bottom: 3px;
+}
+
+.pb-filemng-paragraphs {
+    margin-top: -20px;
+    text-align: center;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+
+.pb-filemng-template-treeview {
+    border-right: none;
+}
+
+#options {
+    text-align: center;
+}
+
+#options > li {
+    display: inline-block;
+}
+
+#pb-filemng-navigation > ul {
+    text-align: center;
+}
+
+#pb-filemng-navigation > ul > li {
+    display: inline-block;
+}
+
+}
+@media (min-width: 768px){
+    .pb-filemng-template .navbar-nav>li {
+    float: right;
+}
+
+
+.sui-treeview-item-text{
+    font-family: cairo!important;
+}
+.sui-treeview-item-icon{
+    margin-left: .5em;
+}
+.sui-treeview-item-toggle-expanded{
+    top: -5px!important;
+    left: 2px!important;
+}
+.sui-treeview-item-toggle{
+    margin-right: 3px!important;
+    margin-left: unset!important;
+}
