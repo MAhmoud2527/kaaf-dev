@@ -5964,22 +5964,14 @@ a.rmv-btn i {
 
 .sign_form h2 {
 	font-size: 24px;
-    margin-bottom: 17px;
+    margin-bottom: 27px;
     font-weight: 600;
     font-family: 'Cairo', sans-serif;
 	color: #333;
 	text-align: center;	
 }
 
-.sign_form p {
-	font-size: 14px;
-    margin-bottom: 47px;
-    font-weight: 400;
-    font-family: 'Cairo', sans-serif;
-	color: #686f7a;
-	text-align: right;	
-	line-height: 26px;
-}
+
 
 .sgntrm145 {
     padding: 47px 0 30px;
@@ -6082,7 +6074,7 @@ a.rmv-btn i {
 }
 
 .main-tabs {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 	direction: rtl;
 }
 
@@ -7416,12 +7408,12 @@ a.rmv-btn i {
 
 .sign_form p {
     font-size: 14px;
-    margin-bottom: 47px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-family: 'Cairo', sans-serif;
     color: #686f7a;
     text-align: center;
-    line-height: 26px;
+    line-height: 2px;
 	text-align: center;
 }
 
@@ -8404,4 +8396,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 .sui-treeview-item-toggle{
     margin-right: 3px!important;
     margin-left: unset!important;
+}
+.custom-file-input{
+    cursor: pointer;
 }
