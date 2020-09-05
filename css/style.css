@@ -5875,7 +5875,7 @@ a.rmv-btn i {
     width: 135px;
     text-align: center;
     margin: auto !important;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .sign_in_up_bg {
@@ -5907,6 +5907,7 @@ a.rmv-btn i {
     width: 100%;
     margin-top: 0;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .ui.form.checkbox_sign {
@@ -5930,7 +5931,8 @@ a.rmv-btn i {
 	font-size: 10px !important;
 	border-radius: 100%;
 	margin-top: 0;
-	right: 1px;
+    right: 1px;
+    top: 3px;
 }
 
 .ui.checkbox.mncheck .box:before, .ui.checkbox.mncheck label:before {
