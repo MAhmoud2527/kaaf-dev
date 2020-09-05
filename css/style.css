@@ -4765,6 +4765,7 @@ a.rmv-btn i {
     float: left;
     width: 100%;
     padding-bottom: 20px;
+    direction: rtl;
 }
 
 .title126 h2 {
@@ -5936,26 +5937,29 @@ a.rmv-btn i {
     border-radius: 100%;
 	width: 18px !important;
 	height: 18px !important;
-	margin-top: 1px;
+	margin-top: 4px;
 }
 
 .login-btn {
-	font-size: 14px;
-    margin-top: 30px;
-    font-weight: 400;
-    font-family: 'Cairo', sans-serif;
-    color: #fff;
-    background: #139893;
-    border-radius: 20px;
-    text-align: center;
-	border: 0;
-	width: 100%;
-    height: 40px;
+	font-size: 14px!important;
+    margin-top: 30px!important;
+    font-weight: 400!important;
+    font-family: 'Cairo', sans-serif!important;
+    color: #fff!important;
+    background: #139893!important;
+    border-radius: 20px!important;
+    text-align: center!important;
+	border: 0!important;
+	width: 100%!important;
+    height: 40px!important;
+    
 }
-
-.login-btn:hover {
+.login-btn a{
     color: #fff;
-    background: #333;
+}
+.login-btn:hover {
+    color: #fff!important;
+    background: #333!important;
 }
 
 .sign_form h2 {
@@ -5964,7 +5968,7 @@ a.rmv-btn i {
     font-weight: 600;
     font-family: 'Cairo', sans-serif;
 	color: #333;
-	text-align: right;	
+	text-align: center;	
 }
 
 .sign_form p {
@@ -5986,7 +5990,7 @@ a.rmv-btn i {
 .sign_footer {
     font-size: 14px;
     font-weight: 400;
-    text-align: right;
+    text-align: center;
     font-family: 'Cairo', sans-serif;
     color: #333;
     padding: 50px 0;
@@ -7418,7 +7422,7 @@ a.rmv-btn i {
     color: #686f7a;
     text-align: center;
     line-height: 26px;
-	text-align: right;
+	text-align: center;
 }
 
 .testtrm145 {
