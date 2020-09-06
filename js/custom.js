@@ -421,6 +421,3 @@ $("#button").click(function () {
     //  clone.attr("id","newId");
      $("#button").before(clone);
 	});
-	
-	
-
