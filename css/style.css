@@ -8402,3 +8402,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
 .custom-file-input{
     cursor: pointer;
 }
+.custom-file-label::after{
+    color: #f3f3f4!important;
+    background-color: #139893!important;
+}
