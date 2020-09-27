@@ -3282,11 +3282,11 @@ i.icon8 {
 
 .input__msg {
     width: 89%;
-    float: left;
+    float: right;
 }
 
 .mf-field .add_msg {
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	padding: 0 20px;
 	border-radius: 20px;
 	border: 0;
