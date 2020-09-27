@@ -8473,3 +8473,68 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child{
     max-height: 240px;
     
 }
+.sub_menu{
+    padding-right: 25px;
+}
+#pills-tabContent .table-responsive{
+    border: unset;
+}
+.dataTables_wrapper .dataTables_filter{
+    float: left;
+    text-align: left;
+}
+.dataTables_wrapper .dataTables_length {
+    float: right;
+}
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #139893;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #fff;
+    padding: 5px 11px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #139893;
+    border-radius: 6px;
+    padding: 9px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff!important;
+    border: 1px solid #139893;
+    background: #139893;
+    border-radius: 20px;
+
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #111;
+}
+#pills-tab a{
+    font-size: 17px;
+}
+.course_deactive a{
+    color: #ed2a26;
+}
+.course_deactive a:hover{
+    color: #ed2a26!important;
+}
+.course_active a{
+    color: #139893;
+}
+.course_active a:hover{
+    color: #139893;
+}
+.uil-trash-alt{
+    color: red;
+}
+.uil-edit-alt{
+    color: #ec6d4a;
+}
+.card_dash_left1 i {
+    font-size: 30px;
+    margin-left: 0px;
+    color: #333;
+}
