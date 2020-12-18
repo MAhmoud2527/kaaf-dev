@@ -360,7 +360,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #1d9b86;
+  background: #9cc350;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -1935,7 +1935,7 @@ ul#grid_home li:last-child .img_container:hover .short_info .btn_1:hover {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #1d9b86  !important;
+  background: #e1d251  !important;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -2087,8 +2087,8 @@ a.grid_item .info {
   left: 0;
   bottom: 0;
   background: transparent;
-  background: -webkit-linear-gradient(top, transparent, #1c9a86);
-  background: linear-gradient(to bottom, transparent, #1c9a86);
+  background: -webkit-linear-gradient(top, transparent, #e1d251);
+  background: linear-gradient(to bottom, transparent, #e1d251);
   box-sizing: border-box;
 }
 a.grid_item .info small {
@@ -2517,8 +2517,8 @@ a.box_feat h3 {
 }
 .box_grid ul li:last-child a {
   background: #fff;
-  border: 2px solid #1c9a88;
-  color: #1c9a88;
+  border: 2px solid #ffc107;
+  color: #ffc107;
   padding: 5px 20px;
   font-weight: 500;
   line-height: 1;
@@ -2533,7 +2533,7 @@ a.box_feat h3 {
   border-radius: 30px;
 }
 .box_grid ul li:last-child a:hover {
-  background: #1c9a88;
+  background: #ffc107;
   color: #fff;
 }
 
